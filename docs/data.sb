@@ -1,0 +1,25 @@
+type uuid = string;
+
+data Brand = {
+    id: uuid;
+    name: string;
+}
+
+endpoint GetBrand = {
+  method: "GET",
+  response: Brand,
+  path: "/brands/:id",
+  Description: "Pull info on a single Brand"
+}
+
+group Brands = {
+  data = Brand
+  Get = [GetBrand, ListBrand]
+  Post = 
+  Put = 
+  Delete = 
+  // Below not needed?
+  Options = 
+  Head = 
+};
+

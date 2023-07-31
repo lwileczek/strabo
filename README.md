@@ -1,10 +1,11 @@
 # Strabo
-Create HTML pages which document APIs based on simple data files
-similar to Cue.
+A simple syntax to define REST endpoints similar to how we define our endpoints in our code.
 
-## Why?
-OpenAPI is too verbose for my taste, and also doesn't directly allow me to add the documentation
-directly to my site.
+Using simple data structures we can define what we expect to receive and return.
+This is a biased and simplistic way to define simple endpoints.
+
+## Getting Started
+Please review the examples and syntax within the [documentation](./docs) directory.
 
 ## Status
 Alpha
