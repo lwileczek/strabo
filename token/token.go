@@ -19,9 +19,10 @@ const (
 	INT   = 11
 
 	//Operators
-	ASSIGN   = 20 // =
-	PLUS     = 21 // +
-	QUESTION = 22 // ?
+	ASSIGN    = 20 // =
+	PLUS      = 21 // +
+	QUESTION  = 22 // ?
+	AMPERSAND = 23 // &
 
 	// Delimiters
 	COMMA     = 30 //,
@@ -41,7 +42,7 @@ const (
 	GET     = 64
 	POST    = 65
 	PUT     = 66
-	DELTE   = 67
+	DELETE  = 67
 	HEAD    = 68
 	OPTIONS = 69
 
@@ -51,12 +52,23 @@ const (
 	DESCRIPTION = 73
 )
 
+//TODO: Maps are slow
 //List of our keywords, may also be seen above
 var keywords = map[string]TokenType{
-	"data":     DATA,
-	"endpoint": ENDPOINT,
-	"group":    GROUP,
-	"type":     TYPE,
+	"data":        DATA,
+	"endpoint":    ENDPOINT,
+	"group":       GROUP,
+	"type":        TYPE,
+	"get":         GET,
+	"post":        POST,
+	"put":         PUT,
+	"delete":      DELETE,
+	"head":        HEAD,
+	"options":     OPTIONS,
+	"method":      METHOD,
+	"response":    RESPONSE,
+	"path":        PATH,
+	"description": DESCRIPTION,
 }
 
 //LookupIdent look up string to see if it's a keyword, if not it's an IDENT

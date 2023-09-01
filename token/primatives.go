@@ -1,22 +1,24 @@
-package main
+package token
 
 import "strings"
 
-var primatives = [24]string{
+type Primative string
+
+var primatives = [24]Primative{
 	//Numbers
 	"number",
 	"int",
-	"int8",
-	"int16",
-	"int32",
-	"int64",
+	"i8",
+	"i16",
+	"i32",
+	"i64",
 	"uint",
-	"uint8",
-	"uint16",
-	"uint32",
-	"uint64",
-	"float32",
-	"float64",
+	"u8",
+	"u16",
+	"u32",
+	"u64",
+	"f32",
+	"f64",
 	//Boolean
 	"bool",
 	//Strings
@@ -35,12 +37,13 @@ var primatives = [24]string{
 }
 
 //DataType A given datatype that may be declared
-type DataType struct {
+type Data struct {
+	Type Primative
 	Name string
 }
 
 //Validate that the string is a valid datatype
-func (d *DataType) Validate() bool {
+func (d *Data) Validate() bool {
 	t := strings.ToLower(d.Name)
 	valid := false
 	for _, primative := range primatives {
