@@ -4,10 +4,10 @@ Data are objects that can be referenced later to indicate data that an endpoint 
 
 ```
 data MyDataObject = {
-    PropertyA: u8
-    PropertyB: bool
-    PropertyC: date
-    PropertyD: string
+    PropertyA: u8,
+    PropertyB: bool,
+    PropertyC: date,
+    PropertyD: string,
 }
 ```
 
@@ -34,8 +34,8 @@ data Job = {
 }
 
 data Employee = {
-    name: string
-    startDate: date
+    name: string,
+    startDate: date,
     job: Job
 }
 ```
@@ -46,11 +46,25 @@ Objects can be extended using the `&` sign.
 
 ```
 data Pet = {
-    name: string
-    age: u8
+    name: string,
+    age: u8,
 }
 
 data Cat = Pet & {
-    color: string
+    color: string,
+}
+```
+## Describing a property
+Use triple forward slash, `///` to indicate the beggining of a documentation statement for the following line. 
+All consecutive lines begging with `///` will continue to concatenate and describe the first non-commented out line which does not start this way
+```rust
+data Person = {
+    ///How Old someone is
+    age: u8,
+    ///The name of the person
+    name: bool,
+    ///The date of their given birth
+    ///So a full date liek YYYY-MM-DD
+    birthdate: date,
 }
 ```
