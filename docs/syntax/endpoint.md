@@ -28,8 +28,10 @@ The path this endpoint will serve.
 ### Params
 If path params are inclduded, use a data type object to describe the expected data types for each path parameter.
 ### Description
-> ** Note **
+> **Note**  
 > perhaps change to use /// to denote a description above the object like Rust docs
+
+
 Optionally Describe this endpoint with a string body. 
 ## Examples
 
