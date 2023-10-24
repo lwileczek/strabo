@@ -28,6 +28,7 @@ After the bare minimum, to make this more useful and enticing, Targete the follo
  - [ ] Group endpoints/routes together
  - [ ] CSS on HTML file to make it pretty
  - [ ] Allow comments in the file
+ - [ ] Does this endpoint (or group) require auth (boolean)
  - [ ] API Level properties, things that apply to the server or all endpoints
    - [ ] Base URL
    - [ ] Auth Type
@@ -41,6 +42,7 @@ After the bare minimum, to make this more useful and enticing, Targete the follo
  - [ ] Webserver to serve up the documentation
  - [ ] Data constraints, "must be greater than 0"
  - [ ] Given data structures, automatically generate example data
+ - [ ] test a request from the documention
 
 ```rust
 struct Person = {
