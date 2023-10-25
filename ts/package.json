@@ -1,6 +1,6 @@
 {
   "name": "strabo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Types to describe an API Server",
   "main": "lib/index.js",
   "types": "lib",
@@ -12,7 +12,7 @@
       "type": "git",
       "url": "git+https://github.com/lwileczek/strabo.git"
   },
-  "author": "",
+  "author": "lwileczek",
   "license": "GPL3",
   "devDependencies": {
     "typescript": "^5.2.2"

@@ -6,7 +6,7 @@ type NUMBER = ObjectValues<typeof NUMBERS>
 type DATE = ObjectValues<typeof DATES>
 type STRUCTURE = ObjectValues<typeof STRUCTURES>
 
-export type PRIMATIVE = BOOLEAN | STRING | NUMBER | DATE | STRUCTURE;
+export type Primative = BOOLEAN | STRING | NUMBER | DATE | STRUCTURE;
 
 const BOOLEANS = {
   bool: "bool",

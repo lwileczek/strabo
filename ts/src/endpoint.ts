@@ -13,7 +13,7 @@ const HTTPMethods = {
 
 type HTTPMethod = ObjectValues<typeof HTTPMethods>
 
-type endpoint = {
+export type Endpoint = {
   method: HTTPMethod;
   response: Data;
   body?: Data;
